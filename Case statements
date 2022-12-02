@@ -1,0 +1,16 @@
+
+
+
+SET serveroutput on;
+declare
+grade char(1) :='&GRADE';
+begin
+case grade
+    when 'A' then dbms_output.put_line('A grade');
+    when 'B' then dbms_output.put_line('B grade');
+    when 'C' then dbms_output.put_line('C grade');
+    when 'D' then dbms_output.put_line('D grade');
+    else dbms_output.put_line('Failed');
+    end case;
+end;
+
